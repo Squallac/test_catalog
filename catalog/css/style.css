@@ -1,0 +1,38 @@
+/******************************************
+			CSS Developed by 
+			Raul Ruiz Ramirez
+ ******************************************/
+.margin-zero { margin: 0; }
+.margin-bottom { margin-bottom: 1rem; }
+
+
+.clickable { cursor: pointer; }
+
+.title-bar
+{
+	font-size: 3rem;	
+	padding: 1rem 0;
+	background-color: #6c6c94;
+	color: white;
+	margin-bottom: 5rem;
+	box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.27);
+}
+
+
+.card 
+{
+	max-width: 21rem;
+    box-shadow: 1px 1px 10px 1px #929292;
+    border-radius: 1rem;
+    margin: 0 auto;
+    height: 17rem;
+    padding: 1rem;
+}
+
+.image-container 
+{
+ 	height: 10rem;
+ 	overflow: hidden;
+}
+
+ 

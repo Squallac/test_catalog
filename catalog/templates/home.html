@@ -1,0 +1,31 @@
+<div class="row text-center margin-zero title-bar">	
+	Catálogo de imágenes	
+</div>
+
+<div class="row margin-zero">
+	
+	<div class="col-xs-6 col-md-4 col-lg-3 text-center"
+		ng-repeat="image in images"
+		style="margin-bottom: 3rem;">
+		
+		<div class="card clickable" ng-click="open_modal($index)">
+			<div class="image-container margin-bottom">
+				<img ng-src="{{::image.previewURL}}" />
+			</div>
+			<div class="tags">
+				{{::image.tags}}
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/ng-template" id="myModal.html">
+    <div class="modal-header text-center">
+        <h3 class="modal-title"> Imagen </h3>
+    </div>
+    <div class="modal-body text-center" id="modal-body-{{name}}">
+        <img ng-src="{{selected_image.previewURL}}" />
+    </div>
+</script>
